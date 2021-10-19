@@ -157,7 +157,7 @@
 
 					if(operator == "+"){
 						// alert(222)
-						if(Number(add1) + Number(add2) == round(Number(Ans))){
+						if(Number(add1) + Number(add2) == Math.round(Number(Ans))){
 							count++;
 						}else{
 							Answer[i].style.backgroundColor = "red";
@@ -165,7 +165,7 @@
 					}
 					
 					if(operator == "-"){
-						if(Number(add1) - Number(add2) == round(Number(Ans))){
+						if(Number(add1) - Number(add2) == Math.round(Number(Ans))){
 							count++;
 						}else{
 							Answer[i].style.backgroundColor = "red";
@@ -173,7 +173,7 @@
 					}
 
 					if(operator == "*"){
-						if(Number(add1) * Number(add2) == round(Number(Ans))){
+						if(Number(add1) * Number(add2) == Math.round(Number(Ans))){
 							count++;
 						}else{
 							Answer[i].style.backgroundColor = "red";
@@ -181,7 +181,7 @@
 					}
 
 					if(operator == "/"){
-						if(Number(add1) / Number(add2) == round(Number(Ans))){
+						if(Math.round(Number(add1) / Number(add2)) == Math.round(Number(Ans)) ){
 							count++;
 						}else{
 							Answer[i].style.backgroundColor = "red";
